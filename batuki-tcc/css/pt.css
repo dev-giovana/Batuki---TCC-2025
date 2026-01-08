@@ -1,0 +1,151 @@
+@font-face{
+    font-family: 'coolvetica';
+    src: url('https://www.dafont.com/pt/coolvetica.font');
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/?family=Inter:wght@100..900&display=swap');
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* ------------------------- NAV --------------------*/
+
+
+#menu{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+#menu > img{
+    width: 25vh;
+    height: 15.5vh;
+    float: left;
+}
+
+#menu > a {
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 2vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    overflow: hidden;
+
+}
+
+#menu > a:hover {
+        border-bottom: 0.3vh solid black;
+      }
+      
+      #menu > a.active {
+        border-bottom: 3px solid black;
+      }
+
+
+/* ----------------------  BARRA DE PESQUISA  ------------------------------ */
+/* Estiliza o contêiner de busca */
+.meu_search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Estiliza o ícone da lupa */
+#meu_icon {
+    cursor: pointer;
+    font-size: 2vh; /* Ajuste o tamanho do ícone conforme necessário */
+    font-weight: bold;
+    position: absolute;
+    left: 5vh; /* Posição original do ícone */
+    top: 2vh;
+    z-index: 1;  /* Garante que o ícone fique sobre o input quando este expandir */
+    transition: left 0.4s ease; /* Transição suave para o movimento do ícone */
+}
+
+/* Estiliza o campo de texto (input) */
+.search-input {
+    font-size: 2vh;
+    font-family: 'Inter';
+    padding: 10px 10px 10px 35px; /* Adiciona espaço suficiente para o ícone dentro do input */
+    border: 0.2vh solid white;  /* Cor e espessura da borda */
+    border-radius: 5vh;      /* Bordas arredondadas */
+    width: 0;                /* Começa com largura zero */
+    outline: none;           /* Remove a borda azul padrão ao focar */
+    opacity: 0;              /* Campo invisível inicialmente */
+    transition: width 0.4s ease, opacity 0.4s ease; /* Transição suave para largura e opacidade */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* Estilo quando o input está visível */
+.meu_search-container.active .search-input {
+    width: 55vh;            /* Largura total quando ativo */
+    opacity: 1;              /* Faz o campo aparecer */
+    padding: 10px 10px 10px 35px;    /* Mantém o espaço para o ícone dentro do input */
+}
+
+/* Muda a posição do ícone quando a barra de pesquisa é ativada */
+.meu_search-container.active #meu_icon {
+    left: 15px; /* Nova posição do ícone quando a barra é ativada */
+}
+
+/* Estilo quando o input é focado */
+.search-input:focus {
+    border-color: black;       /* Muda a cor da borda ao focar */
+    background-color: white; /* Muda a cor do fundo ao focar */
+}
+
+/*----------------------------BOTÃO PERFIL --------------------*/
+#menu > .perfil-container{
+    padding: 10px 20px;
+    color: rgb(255, 0, 0);
+    font-family: 'Inter';
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+
+/* ---------------- CONTAINER ALBUM ---------------------------------------------- */
+
+h1{
+    margin-right:15vh;
+}
+
+/*--------------------------------- FOOTER -------------------------------------------------*/
+footer {
+    background-color: #000000; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.footer-content {
+    max-width: 1200px; /* Largura máxima */
+    margin: auto; /* Centraliza o conteúdo */
+    font-family: 'Inter';
+}
+
+
+
+#form-editar {
+    display: none; /* Padrão: escondido */
+    visibility: visible; /* Garante que o elemento seja visível */
+    opacity: 1; /* Totalmente opaco */
+    transition: opacity 0.3s ease-in-out; /* Suaviza a exibição */
+}

@@ -1,0 +1,152 @@
+/* ================= FONTES ================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url('../img/musica_fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* ================= NAV ================= */
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    background: rgba(255, 255, 255, 0.95); /* 🔥 IMPORTANTE */
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+
+    z-index: 1000;
+}
+
+#menu img {
+    height: 70px;
+}
+
+#menu a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+#menu a:hover {
+    border-bottom: 2px solid black;
+}
+
+/* ================= SEARCH ================= */
+.meu_search-container {
+    position: relative;
+}
+
+#meu_icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-input {
+    width: 0;
+    opacity: 0;
+    padding: 10px 10px 10px 40px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    transition: 0.4s;
+    background: white;
+}
+
+.meu_search-container.active .search-input {
+    width: 260px;
+    opacity: 1;
+}
+
+/* ================= PERFIL ================= */
+.perfil-container i {
+    font-size: 18px;
+    color: black;
+}
+
+/* ================= MAIN ================= */
+.idiomas-main {
+    display: flex;
+    flex-direction: column;     /* tudo em coluna */
+    align-items: center;
+    gap: 50px;
+
+    padding-top: 160px;         /* 🔥 empurra abaixo do menu */
+    padding-bottom: 100px;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* ================= PLAYLIST CARD ================= */
+.ranking-container {
+    width: 100%;
+    max-width: 1100px;
+
+    background: rgba(255, 255, 255, 0.96);
+    padding: 30px;
+
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: relative;
+    overflow: hidden; /* 🔥 impede “vazar” */
+}
+
+.ranking-container h1 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* ================= IFRAME ================= */
+.ranking-container iframe {
+    width: 100%;
+    height: 420px;
+    border-radius: 12px;
+    border: none;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: black;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.footer-content {
+    font-size: 14px;
+}

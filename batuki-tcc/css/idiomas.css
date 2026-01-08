@@ -1,0 +1,142 @@
+/* ------------------ FONTES (FORMA CORRETA) ------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* ------------------ RESET ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------ BODY ------------------ */
+body {
+    font-family: 'Inter', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ------------------ NAV ------------------ */
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#menu img {
+    width: 160px;
+}
+
+#menu a {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+}
+
+#menu a:hover {
+    border-bottom: 2px solid black;
+}
+
+/* ------------------ PESQUISA ------------------ */
+.meu_search-container {
+    position: relative;
+}
+
+#meu_icon {
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.search-input {
+    width: 0;
+    opacity: 0;
+    padding: 8px 10px 8px 35px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.meu_search-container.active .search-input {
+    width: 260px;
+    opacity: 1;
+}
+
+/* ------------------ PERFIL ------------------ */
+.perfil-container i {
+    font-size: 18px;
+    color: black;
+}
+
+/* ------------------ MAIN ------------------ */
+.idiomas-main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    margin: 80px 0;
+}
+
+/* ------------------ PLAYLIST ------------------ */
+.ranking-container {
+    width: 100%;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 5vh;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    gap: 200vh;
+    margin: 20vh;
+}
+
+.ranking-container {
+    width: 100%;
+    max-width: 1100px; /* 🔥 largura boa */
+    
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+
+    transition: 0.3s ease;
+}
+
+.ranking-container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+.ranking-container h1 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.ranking-container iframe {
+        width: 100%;
+    height: 420px; /* 🔥 maior */
+    border-radius: 14px;
+    border: none;
+
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    background-color: black;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.footer-content {
+    font-size: 14px;
+}

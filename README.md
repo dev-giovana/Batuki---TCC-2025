@@ -172,8 +172,8 @@ O banco de dados deve ser configurado manualmente utilizando o **MySQL Workbench
 
 ### 2️⃣ Criar as tabelas
 
-1. No projeto, localize o arquivo de texto que contém o script SQL das tabelas
-2. Copie **todo o conteúdo** do arquivo
+1. No projeto, localize o arquivo de texto que contém o script SQL das tabelas (Pasta "sql")
+2. Copie **todo o conteúdo** do arquivo de texto
 3. Cole no MySQL Workbench, com o banco `db_batuki` selecionado
 4. Execute o script para criar as tabelas
 
